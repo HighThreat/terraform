@@ -1,7 +1,6 @@
-location             = "West Europe"
-admin_username       = "devadmin"
-admin_password       = "P@ssw0rdGlobexDev!2026"
-vnet_address_space   = ["10.0.0.0/16"]
+location           = "France Central"
+admin_username     = "devadmin"
+vnet_address_space = ["10.0.0.0/16"]
 
 subnets = {
   "subnet-web" = {
@@ -29,5 +28,5 @@ vms = {
   }
 }
 
-storage_account_name = "stglobex"
+storage_account_name = "stfrglobex"
 container_name       = "data-dev"

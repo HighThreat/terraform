@@ -19,6 +19,8 @@ Para desplegar los recursos en el entorno actual (asegúrate de estar en el work
 terraform apply -var-file=env/<entorno>.tfvars
 ```
 
+La variable sensible `admin_password` ya no se guarda en los archivos públicos del repositorio. Pásala desde tu entorno local con `TF_VAR_admin_password` o con un archivo `.tfvars` privado fuera de control de versiones.
+
 ## Cómo limpiar y destruir la infraestructura
 Este proyecto incluye una máquina virtual protegida con `prevent_destroy = true`. 
 Si intentas ejecutar `terraform destroy -var-file=env/<entorno>.tfvars`, Terraform lanzará un error y detendrá la destrucción para proteger este recurso crítico.
